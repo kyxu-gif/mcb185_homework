@@ -51,3 +51,8 @@ def triangle_area(w, h): return rectangle_area(w, h) / 2
 def square_area(w, h): return w * h
 def circle_circumference(r): return 2 * math.pi * r
 def square_volume(w,h): return w**2 * h
+def c_to_f(c):
+	return c / 9 * 5 + 32
+print(c_to_f(0))
+print(c_to_f(100))
+print(c_to_f(-40))
