@@ -56,3 +56,76 @@ def c_to_f(c):
 print(c_to_f(0))
 print(c_to_f(100))
 print(c_to_f(-40))
+
+# Strings
+s = 'hello world'
+print(s, type(s))
+
+# Conditionals
+a = 2
+b = 2
+if a == b:
+	print('a equals b') 	# indented bc of block structure
+print(a, b)
+
+def is_even(x):
+	if x % 2 == 0: return True
+	return False
+	
+print(is_even(2))
+print(is_even(3))
+
+# Boolean
+c = a == b
+print(c)
+print(type(c))
+
+# if-elif-else
+if a < b:  	print('a < b')
+elif a > b: print('a > b')
+else: 		print('a == b')
+
+# Boolean Chains
+if a < b or a > b: print('all things being equal, a and b are not')
+if a < b and a > b: print('you are living in a strange world')
+if not False: print(True)
+
+# Floating Point Warning
+a = 0.3
+b = 0.1 * 3
+if 	 a < b: print('a < b'))
+elif a > b: print('a > b')
+else:		print('a == b')
+
+print(abs(a - b)) # 5.551115123125783e-17
+if abs(a - b) < 1e-9: print('close enough')
+
+if math.isclose(a, b): print('close enough') 
+
+# String Comparison
+s1 = 'A'
+s2 = 'B'
+s3 = 'a'
+if s1 < s2: print('A < B')
+if s2 < s3: print('B < a')
+
+# Mismatched Type Error
+a = 1
+s = 'G'
+if a < s: print('a < s')
+
+# None Type
+def silly(m, x, b):
+	y = m * x + b
+print(silly(2, 3, 4))
+
+# Practice
+import math 
+
+def is_integer(x):
+	r = x % 1
+	return r
+	if math.isclose(0, r): return True
+	else: return False
+	
+print(is_integer(3.0))
