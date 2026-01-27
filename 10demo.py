@@ -129,3 +129,8 @@ def is_integer(x):
 	else: return False
 	
 print(is_integer(3.0))
+
+def max_of_three(a, b, c)
+	if a > b: return a
+	elif b > c: return b
+	else: return c 
