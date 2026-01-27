@@ -40,3 +40,14 @@ hyp = pythagoras(3, 4)
 	return math.sqrt(a**2 + b**2)
 	
 print(pythagoras(3, 4))
+
+# Block Structure
+def pythagoras(a, b): return math.sqrt (a**2 + b**2)
+
+# Function Practice
+def circle_area(r): return math.pi * r**2
+def rectangle_area(w, h): return w * h
+def triangle_area(w, h): return rectangle_area(w, h) / 2
+def square_area(w, h): return w * h
+def circle_circumference(r): return 2 * math.pi * r
+def square_volume(w,h): return w**2 * h
