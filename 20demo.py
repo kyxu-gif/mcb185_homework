@@ -132,3 +132,51 @@ print('indexG?', alph.index('G'))
 print('find G?', alph.find('G'))
 print('find Z?', alph.find('Z'))
 
+# Practice Problems
+# Write a function that returns minimum value of a list.
+def minimum(vals):
+	mini = vals[0]
+	for val in vals[1:]:
+		if val < mini: mini = val
+	return mini
+	
+print(minimum([2, 4, 6, 8]))
+
+# Write a function that returns both minimum and maximum values of a list
+def minmax(vals):
+	mini = vals[0]
+	maxi = vals[0]
+	for val in vals[1:]:
+		if val < mini: mini = val
+		if val > maxi: maxi = val
+	return mini, maxi
+	
+print(minmax([2,4,6,8]))
+
+# Write a function that returns the mean values in a list
+def mean(vals):
+	total = 0
+	for val in vals: total += val
+	return total / len(vals)
+	
+print(mean([2, 4, 6, 8]))
+
+# Write a function that computes the entropy of a probability distribution
+import math
+def entropy(probs):
+	h = 0
+	for p in probs:
+		h -= p * math.log2(p)
+	return h	
+
+print(entropy([0.2, 0.3, 0.5]))
+
+# Write a function that computes Kullback-Leiber distance between two sets of probability distributions
+def dkl(P, Q):
+	d = 0
+	for p, q in zip(P, Q):
+		d += p * math.log(p / q)
+	return d
+p1 = [0.1, 0.2, 0.3, 0.4]
+p2 = (0.4, 0.3, 0.2, 0.1)
+print(dkl(p1, p2))
