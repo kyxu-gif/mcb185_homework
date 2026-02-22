@@ -180,3 +180,22 @@ def dkl(P, Q):
 p1 = [0.1, 0.2, 0.3, 0.4]
 p2 = (0.4, 0.3, 0.2, 0.1)
 print(dkl(p1, p2))
+
+line = input('type something and hit return: ')
+print('that line was', len(line), 'characters long')
+
+import sys
+print(sys.argv)
+
+i = int('42')
+x = float('0.61803')
+print(i * x)
+
+# x = float('hello') shows up as an error
+
+for i in range(0, len(list)):
+	for j in range(X, len(list)):
+	
+# X = 0: all combinations
+# X = i: half-matrix with diagonal 
+# X = i+1: half-matrix without diagonal
